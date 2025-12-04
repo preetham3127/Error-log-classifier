@@ -208,3 +208,7 @@ class ReportGenerator:
 # added: change 5
 _added_marker_5 = 5
 
+
+# added: change 12
+_added_marker_12 = 12
+
