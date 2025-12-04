@@ -189,3 +189,7 @@ class LogProcessor:
 
 
 
+
+# added: change 4
+_added_marker_4 = 4
+
