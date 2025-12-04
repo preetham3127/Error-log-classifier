@@ -150,3 +150,7 @@ class ErrorClusterer:
 # commit_marker_1
 _commit_marker_1 = 1
 
+
+# commit_marker_8
+_commit_marker_8 = 8
+
