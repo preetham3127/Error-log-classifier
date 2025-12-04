@@ -156,3 +156,7 @@ class ErrorClusterer:
 # added: change 1
 _added_marker_1 = 1
 
+
+# added: change 8
+_added_marker_8 = 8
+
