@@ -191,3 +191,154 @@
             color: #999;
             text-transform: uppercase;
         }
+                
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Error Log Analysis Report</h1>
+            <div class="timestamp">Generated: 2025-12-04 15:31:49</div>
+        </header>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Total Clusters</h3>
+                <div class="value">26</div>
+            </div>
+            <div class="summary-card">
+                <h3>Lines Analyzed</h3>
+                <div class="value">35</div>
+            </div>
+            <div class="summary-card">
+                <h3>Avg Cluster Size</h3>
+                <div class="value">1.35</div>
+            </div>
+            <div class="summary-card">
+                <h3>Largest Cluster</h3>
+                <div class="value">10</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Top Offenders - Most Frequent Error Patterns</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 5%;">Rank</th>
+                        <th style="width: 40%;">Error Signature</th>
+                        <th style="width: 12%;">Occurrences</th>
+                        <th style="width: 43%;">Sample Line</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="rank">#1</td>
+                        <td class="signature" title="Database|database connection timeout server">Database|database connection timeout server</td>
+                        <td><span class="occurrence">10</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:15:23.456] ERROR: Database connection timeout at server 192.168.1.100...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#2</td>
+                        <td class="signature" title="NullPointerException|nullpointerexception userservice.getuser() line">NullPointerException|nullpointerexception userservice.getuser() line</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:16:15.123] ERROR: NullPointerException in UserService.getUser() at line 45...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#3</td>
+                        <td class="signature" title="NullPointerException|nullpointerexception paymentservice.processpayment() line">NullPointerException|nullpointerexception paymentservice.processpayment() line</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:18:02.123] ERROR: NullPointerException in PaymentService.processPayment() at line 78...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#4</td>
+                        <td class="signature" title="NullPointerException|nullpointerexception notificationservice.sendemail() line 156">NullPointerException|nullpointerexception notificationservice.sendemail() line 1</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:21:15.234] ERROR: NullPointerException in NotificationService.sendEmail() at line 156...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#5</td>
+                        <td class="signature" title="NullPointerException|nullpointerexception reportgenerator.generatepdf() line 203">NullPointerException|nullpointerexception reportgenerator.generatepdf() line 203</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:23:30.890] ERROR: NullPointerException in ReportGenerator.generatePDF() at line 203...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#6</td>
+                        <td class="signature" title="NullPointerException|nullpointerexception eventlistener.onupdate() line">NullPointerException|nullpointerexception eventlistener.onupdate() line</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:25:30.123] ERROR: NullPointerException in EventListener.onUpdate() at line 89...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#7</td>
+                        <td class="signature" title="warn:|high memory usage detected:">warn:|high memory usage detected:</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:15:25.789] WARN: High memory usage detected: 85% available...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#8</td>
+                        <td class="signature" title="Out|out memory exception cachemanager">Out|out memory exception cachemanager</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:19:30.567] ERROR: Out of memory exception in CacheManager thread-123...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#9</td>
+                        <td class="signature" title="Out|out disk space &lt;path&gt;">Out|out disk space &lt;path&gt;</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:24:15.456] CRITICAL: Out of disk space on /data partition...</div></td>
+                    </tr>
+
+                    <tr>
+                        <td class="rank">#10</td>
+                        <td class="signature" title="warn:|cache miss rate exceeded">warn:|cache miss rate exceeded</td>
+                        <td><span class="occurrence">1</span></td>
+                        <td><div class="sample-line">[2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold...</div></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Analysis Statistics</h2>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-label">Smallest Cluster</div>
+                    <div class="stat-value">
+1
+</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Average per Cluster</div>
+                    <div class="stat-value">
+1.3
+</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-label">Coverage by Top 10</div>
+                    <div class="stat-value">
+54.3%
+</div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Error Log Classifier - Automated Analysis Report</p>
+        </footer>
+    </div>
+</body>
+</html>
