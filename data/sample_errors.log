@@ -30,4 +30,3 @@
 [2024-12-01 10:22:15.123] WARN: Slow query detected: SELECT * FROM users took 45 seconds
 [2024-12-01 10:17:45.567] CRITICAL: Disk space low: /var/log has 2GB remaining
 [2024-12-01 10:21:00.789] CRITICAL: Service health check failed: endpoint returned 503
-[2024-12-01 10:22:30.456] ERROR: Failed to write to database: disk quota exceeded
