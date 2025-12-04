@@ -54,3 +54,23 @@ def watch(logfile: Path, output_dir: Path, interval: float = 2.0, once: bool = F
 
     except KeyboardInterrupt:
         print('\n[watcher] Stopped by user.')
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Watch a log file and auto-run analysis when it changes.')
+    parser.add_argument('--log', '-l', default='data/sample_errors.log', help='Path to log file to watch')
+    parser.add_argument('--output', '-o', default='output', help='Output directory for analysis results')
+    parser.add_argument('--interval', '-i', type=float, default=2.0, help='Polling interval in seconds')
+    parser.add_argument('--once', action='store_true', help='Run once and exit')
+
+    args = parser.parse_args()
+
+    logfile = Path(args.log)
+    output_dir = Path(args.output)
+
+    watch(logfile, output_dir, interval=args.interval, once=args.once)
+
+
+if __name__ == '_main_':
+    main()
+    
