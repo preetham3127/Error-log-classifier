@@ -269,3 +269,7 @@ class DiffAnalyzer:
 
 
 
+
+# added: change 2
+_added_marker_2 = 2
+
