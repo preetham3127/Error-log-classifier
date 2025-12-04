@@ -120,3 +120,7 @@ class SignatureExtractor:
 # commit_marker_6
 _commit_marker_6 = 6
 
+
+# commit_marker_13
+_commit_marker_13 = 13
+
