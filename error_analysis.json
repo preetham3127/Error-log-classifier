@@ -1,0 +1,30 @@
+{
+  "summary": {
+    "total_clusters": 26,
+    "total_lines": 35,
+    "average_cluster_size": 1.3461538461538463,
+    "largest_cluster": 10,
+    "smallest_cluster": 1
+  },
+  "top_clusters": [
+    {
+      "signature": "Database|database connection timeout server",
+      "count": 10,
+      "sample_lines": [
+        "[2024-12-01 10:15:23.456] ERROR: Database connection timeout at server 192.168.1.100",
+        "[2024-12-01 10:15:24.123] ERROR: Database connection timeout at server 192.168.1.101",
+        "[2024-12-01 10:16:02.456] ERROR: Database connection timeout at server 192.168.1.102"
+      ],
+      "line_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+      
