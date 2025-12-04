@@ -1,0 +1,129 @@
+{
+  "summary": {
+    "total_clusters": 26,
+    "total_lines": 35,
+    "average_cluster_size": 1.3461538461538463,
+    "largest_cluster": 10,
+    "smallest_cluster": 1
+  },
+  "top_clusters": [
+    {
+      "signature": "Database|database connection timeout server",
+      "count": 10,
+      "sample_lines": [
+        "[2024-12-01 10:15:23.456] ERROR: Database connection timeout at server 192.168.1.100",
+        "[2024-12-01 10:15:24.123] ERROR: Database connection timeout at server 192.168.1.101",
+        "[2024-12-01 10:16:02.456] ERROR: Database connection timeout at server 192.168.1.102"
+      ],
+      "line_numbers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+          },
+    {
+      "signature": "NullPointerException|nullpointerexception userservice.getuser() line",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:16:15.123] ERROR: NullPointerException in UserService.getUser() at line 45"
+      ],
+      "line_numbers": [
+        10
+      ]
+    },
+    {
+      "signature": "NullPointerException|nullpointerexception paymentservice.processpayment() line",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:18:02.123] ERROR: NullPointerException in PaymentService.processPayment() at line 78"
+      ],
+      "line_numbers": [
+        11
+      ]
+    },
+    {
+      "signature": "NullPointerException|nullpointerexception notificationservice.sendemail() line 156",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:21:15.234] ERROR: NullPointerException in NotificationService.sendEmail() at line 156"
+      ],
+      "line_numbers": [
+        12
+      ]
+    },
+    {
+      "signature": "NullPointerException|nullpointerexception reportgenerator.generatepdf() line 203",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:23:30.890] ERROR: NullPointerException in ReportGenerator.generatePDF() at line 203"
+      ],
+      "line_numbers": [
+        13
+      ]
+    },
+    {
+      "signature": "NullPointerException|nullpointerexception eventlistener.onupdate() line",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:25:30.123] ERROR: NullPointerException in EventListener.onUpdate() at line 89"
+      ],
+      "line_numbers": [
+        14
+      ]
+    },
+    {
+      "signature": "warn:|high memory usage detected:",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:15:25.789] WARN: High memory usage detected: 85% available"
+      ],
+      "line_numbers": [
+        15
+      ]
+    },
+    {
+      "signature": "Out|out memory exception cachemanager",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:19:30.567] ERROR: Out of memory exception in CacheManager thread-123"
+      ],
+      "line_numbers": [
+        16
+      ]
+    },
+    {
+      "signature": "Out|out disk space <path>",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:24:15.456] CRITICAL: Out of disk space on /data partition"
+      ],
+      "line_numbers": [
+        17
+      ]
+    },
+    {
+      "signature": "warn:|cache miss rate exceeded",
+      "count": 1,
+      "sample_lines": [
+        "[2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold"
+      ],
+      "line_numbers": [
+        18
+      ]
+    }
+  ],
+  "additional_stats": {
+    "total_lines": 35,
+    "with_timestamp": 35,
+    "avg_line_length": 84.34285714285714,
+    "min_line_length": 70,
+    "max_line_length": 100
+  }
+}
