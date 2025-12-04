@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Error-log-classifier
 =======
 # Error Log Classifier Project
