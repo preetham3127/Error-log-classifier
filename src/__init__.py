@@ -7,10 +7,6 @@ __author__ = "Group 106 - Preetham Ghorpade & Harish R S"
 __description__ = "Error log analysis and clustering tool with CSV and HTML exports"
 
 
-# commit_marker_7
-_commit_marker_7 = 7
 
 
-# commit_marker_14
-_commit_marker_14 = 14
 

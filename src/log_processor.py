@@ -184,14 +184,8 @@ class LogProcessor:
         return stats
 
 
-# commit_marker_4
-_commit_marker_4 = 4
 
 
-# commit_marker_11
-_commit_marker_11 = 11
 
 
-# commit_marker_18
-_commit_marker_18 = 18
 

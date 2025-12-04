@@ -428,14 +428,8 @@ class ExportHandler:
         return "\n".join(html_parts)
 
 
-# commit_marker_3
-_commit_marker_3 = 3
 
 
-# commit_marker_10
-_commit_marker_10 = 10
 
 
-# commit_marker_17
-_commit_marker_17 = 17
 
