@@ -17,7 +17,8 @@
 [2024-12-01 10:19:30.567] ERROR: Out of memory exception in CacheManager thread-123
 [2024-12-01 10:24:15.456] CRITICAL: Out of disk space on /data partition
 [2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold
-[2024-12-01 10:16:01.234] ERROR: Authentication failed for user admin_service[2024-12-01 10:20:30.456] ERROR: Permission denied: user service_account lacks READ_ADMIN_LOGS
+[2024-12-01 10:16:01.234] ERROR: Authentication failed for user admin_service
+[2024-12-01 10:20:30.456] ERROR: Permission denied: user service_account lacks READ_ADMIN_LOGS
 [2024-12-01 10:23:00.234] ERROR: Invalid API token provided in Authorization header
 [2024-12-01 10:27:15.123] CRITICAL: System CPU temperature critical: 95°C
 [2024-12-01 10:17:30.789] ERROR: Failed to parse JSON response from endpoint /api/v2/users
@@ -25,4 +26,8 @@
 [2024-12-01 10:25:00.567] ERROR: Request body exceeds maximum size limit of 10MB
 [2024-12-01 10:18:01.890] ERROR: Socket timeout when connecting to 10.0.0.50:5432
 [2024-12-01 10:18:30.456] ERROR: Invalid SSL certificate for domain api.external.com
-[2024-12-01 10:22:00.890] ERROR: TLS handshake failed with remote host 203.0.113.45
+[2024-12-01 10:22:00.890] ERROR: TLS handshake failed with remote host 203.0.113.45[2024-12-01 10:19:00.789] WARN: Request timeout after 30 seconds for GET /api/v1/orders
+[2024-12-01 10:22:15.123] WARN: Slow query detected: SELECT * FROM users took 45 seconds
+[2024-12-01 10:17:45.567] CRITICAL: Disk space low: /var/log has 2GB remaining
+[2024-12-01 10:21:00.789] CRITICAL: Service health check failed: endpoint returned 503
+[2024-12-01 10:22:30.456] ERROR: Failed to write to database: disk quota exceeded
