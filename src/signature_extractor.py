@@ -122,3 +122,7 @@ class SignatureExtractor:
 
 
 
+
+# added: change 6
+_added_marker_6 = 6
+
