@@ -193,3 +193,7 @@ class LogProcessor:
 # added: change 4
 _added_marker_4 = 4
 
+
+# added: change 11
+_added_marker_11 = 11
+
