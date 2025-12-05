@@ -29,5 +29,3 @@
 [2024-12-01 10:18:30.456] ERROR: Invalid SSL certificate for domain api.external.com
 [2024-12-01 10:22:00.890] ERROR: TLS handshake failed with remote host 203.0.113.45[2024-12-01 10:19:00.789] WARN: Request timeout after 30 seconds for GET /api/v1/orders
 [2024-12-01 10:22:15.123] WARN: Slow query detected: SELECT * FROM users took 45 seconds
-[2024-12-01 10:17:45.567] CRITICAL: Disk space low: /var/log has 2GB remaining
-[2024-12-01 10:21:00.789] CRITICAL: Service health check failed: endpoint returned 503
