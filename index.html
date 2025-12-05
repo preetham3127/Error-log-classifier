@@ -204,25 +204,25 @@
 
         <header>
             <h1>Error Log Analysis Report</h1>
-            <div class="timestamp">Generated: 2025-12-04 15:31:49</div>
+            <div class="timestamp" id="timestamp">Generated: Loading...</div>
         </header>
 
         <div class="summary-grid">
             <div class="summary-card">
                 <h3>Total Clusters</h3>
-                <div class="value">0</div>
+                <div class="value" id="total-clusters">Loading...</div>
             </div>
             <div class="summary-card">
                 <h3>Lines Analyzed</h3>
-                <div class="value">0</div>
+                <div class="value" id="total-lines">Loading...</div>
             </div>
             <div class="summary-card">
                 <h3>Avg Cluster Size</h3>
-                <div class="value">0</div>
+                <div class="value" id="avg-cluster-size">Loading...</div>
             </div>
             <div class="summary-card">
                 <h3>Largest Cluster</h3>
-                <div class="value">0</div>
+                <div class="value" id="largest-cluster">Loading...</div>
             </div>
         </div>
         <div class="section">
@@ -236,77 +236,12 @@
                         <th style="width: 43%;">Sample Line</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="clusters-table-body">
+                    <tr><td colspan="4">Loading data...</td></tr>
+                </tbody>
+            </table>
+        </div>
 
-                    <tr>
-                        <td class="rank">#1</td>
-                        <td class="signature" title="Database|database connection timeout server">Database|database connection timeout server</td>
-                        <td><span class="occurrence">10</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:15:23.456] ERROR: Database connection timeout at server 192.168.1.100...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#2</td>
-                        <td class="signature" title="NullPointerException|nullpointerexception userservice.getuser() line">NullPointerException|nullpointerexception userservice.getuser() line</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:16:15.123] ERROR: NullPointerException in UserService.getUser() at line 45...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#3</td>
-                        <td class="signature" title="NullPointerException|nullpointerexception paymentservice.processpayment() line">NullPointerException|nullpointerexception paymentservice.processpayment() line</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:18:02.123] ERROR: NullPointerException in PaymentService.processPayment() at line 78...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#4</td>
-                        <td class="signature" title="NullPointerException|nullpointerexception notificationservice.sendemail() line 156">NullPointerException|nullpointerexception notificationservice.sendemail() line 1</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:21:15.234] ERROR: NullPointerException in NotificationService.sendEmail() at line 156...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#5</td>
-                        <td class="signature" title="NullPointerException|nullpointerexception reportgenerator.generatepdf() line 203">NullPointerException|nullpointerexception reportgenerator.generatepdf() line 203</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:23:30.890] ERROR: NullPointerException in ReportGenerator.generatePDF() at line 203...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#6</td>
-                        <td class="signature" title="NullPointerException|nullpointerexception eventlistener.onupdate() line">NullPointerException|nullpointerexception eventlistener.onupdate() line</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:25:30.123] ERROR: NullPointerException in EventListener.onUpdate() at line 89...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#7</td>
-                        <td class="signature" title="warn:|high memory usage detected:">warn:|high memory usage detected:</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:15:25.789] WARN: High memory usage detected: 85% available...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#8</td>
-                        <td class="signature" title="Out|out memory exception cachemanager">Out|out memory exception cachemanager</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:19:30.567] ERROR: Out of memory exception in CacheManager thread-123...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#9</td>
-                        <td class="signature" title="Out|out disk space &lt;path&gt;">Out|out disk space &lt;path&gt;</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:24:15.456] CRITICAL: Out of disk space on /data partition...</div></td>
-                    </tr>
-
-                    <tr>
-                        <td class="rank">#10</td>
-                        <td class="signature" title="warn:|cache miss rate exceeded">warn:|cache miss rate exceeded</td>
-                        <td><span class="occurrence">1</span></td>
-                        <td><div class="sample-line">[2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold...</div></td>
-                    </tr>
 
                 </tbody>
             </table>
@@ -317,21 +252,15 @@
             <div class="stats-row">
                 <div class="stat-item">
                     <div class="stat-label">Smallest Cluster</div>
-                    <div class="stat-value">
-1
-</div>
+                    <div class="stat-value" id="smallest-cluster">Loading...</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-label">Average per Cluster</div>
-                    <div class="stat-value">
-1.3
-</div>
+                    <div class="stat-value" id="avg-size">Loading...</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-label">Coverage by Top 10</div>
-                    <div class="stat-value">
-54.3%
-</div>
+                    <div class="stat-value" id="coverage">Loading...</div>
                 </div>
             </div>
         </div>
@@ -340,5 +269,119 @@
             <p>Error Log Classifier - Automated Analysis Report</p>
         </footer>
     </div>
+
+    <script>
+        // Auto-refreshing loader for output/error_analysis.json
+        const JSON_PATH = 'output/error_analysis.json';
+        const POLL_INTERVAL_MS = 10000; // 10 seconds
+        let lastJsonText = null;
+        let pollTimer = null;
+
+        async function fetchJson(noCache = true) {
+            try {
+                const url = noCache ? `${JSON_PATH}?_ts=${Date.now()}` : JSON_PATH;
+                const res = await fetch(url);
+                if (!res.ok) throw new Error('Not found');
+                const text = await res.text();
+                return text;
+            } catch (err) {
+                console.error('fetchJson error:', err);
+                return null;
+            }
+        }
+
+        async function checkForUpdate() {
+            const text = await fetchJson(true);
+            const statusEl = document.getElementById('timestamp');
+            if (!text) {
+                statusEl.textContent = 'Error: Could not load data. Ensure output/error_analysis.json exists and is readable.';
+                return;
+            }
+
+            if (lastJsonText === null) {
+                // first load
+                lastJsonText = text;
+                try { populateReport(JSON.parse(text)); } catch (e) { console.error(e); }
+                statusEl.textContent = `Generated: ${new Date().toLocaleString()}`;
+                return;
+            }
+
+            if (text !== lastJsonText) {
+                // content changed, update
+                lastJsonText = text;
+                try { populateReport(JSON.parse(text)); } catch (e) { console.error(e); }
+                statusEl.textContent = `Generated: ${new Date().toLocaleString()} (refreshed)`;
+            }
+        }
+
+        function startPolling() {
+            if (pollTimer) clearInterval(pollTimer);
+            pollTimer = setInterval(checkForUpdate, POLL_INTERVAL_MS);
+        }
+
+        function stopPolling() {
+            if (pollTimer) clearInterval(pollTimer);
+            pollTimer = null;
+        }
+
+        function populateReport(data) {
+            const summary = data.summary || {};
+            document.getElementById('total-clusters').textContent = summary.total_clusters ?? 'N/A';
+            document.getElementById('total-lines').textContent = summary.total_lines ?? 'N/A';
+            document.getElementById('avg-cluster-size').textContent = ((summary.average_cluster_size || 0)).toFixed(2);
+            document.getElementById('largest-cluster').textContent = summary.largest_cluster ?? 'N/A';
+
+            document.getElementById('smallest-cluster').textContent = summary.smallest_cluster ?? 'N/A';
+            document.getElementById('avg-size').textContent = ((summary.average_cluster_size || 0)).toFixed(2);
+
+            const topClusters = data.top_clusters || [];
+            const totalLines = summary.total_lines || 0;
+            let top10Count = 0;
+            for (let i = 0; i < Math.min(10, topClusters.length); i++) top10Count += topClusters[i].count || 0;
+            const coverage = totalLines > 0 ? ((top10Count / totalLines) * 100).toFixed(1) : '0.0';
+            document.getElementById('coverage').textContent = coverage + '%';
+
+            const tbody = document.getElementById('clusters-table-body');
+            tbody.innerHTML = '';
+            if (topClusters.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4">No clusters found</td></tr>';
+                return;
+            }
+
+            topClusters.forEach((cluster, index) => {
+                const row = document.createElement('tr');
+                const sampleLine = (cluster.sample_lines && cluster.sample_lines[0]) ? cluster.sample_lines[0] : '';
+                const sig = cluster.signature || '';
+                row.innerHTML = `
+                    <td class="rank">#${index + 1}</td>
+                    <td class="signature" title="${escapeHtml(sig)}">${escapeHtml(sig.length > 60 ? sig.substring(0, 57) + '...' : sig)}</td>
+                    <td><span class="occurrence">${cluster.count || 0}</span></td>
+                    <td><div class="sample-line">${escapeHtml(sampleLine.length > 150 ? sampleLine.substring(0,147)+'...' : sampleLine)}</div></td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function escapeHtml(unsafe) {
+            return String(unsafe)
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/\"/g, '&quot;')
+              .replace(/'/g, '&#039;');
+        }
+
+        // Manual refresh handler
+        document.addEventListener('DOMContentLoaded', () => {
+            const controls = document.createElement('div');
+            controls.style.margin = '10px 0';
+            controls.innerHTML = '<button id="refresh-btn">Refresh now</button> <span id="auto-refresh-note">Auto-refresh every 10s</span>';
+            document.querySelector('.container').insertBefore(controls, document.querySelector('.summary-grid'));
+            document.getElementById('refresh-btn').addEventListener('click', async () => { await checkForUpdate(); });
+            // initial load + start polling
+            checkForUpdate();
+            startPolling();
+        });
+    </script>
 </body>
 </html>
