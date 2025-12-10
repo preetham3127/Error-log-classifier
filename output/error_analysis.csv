@@ -8,4 +8,3 @@ rank,signature,occurrence_count,sample_line,first_10_line_numbers,total_line_cou
 7,warn:|high memory usage detected:,1,[2024-12-01 10:15:25.789] WARN: High memory usage detected: 85% available,15,1
 8,Out|out memory exception cachemanager,1,[2024-12-01 10:19:30.567] ERROR: Out of memory exception in CacheManager thread-123,16,1
 9,Out|out disk space <path>,1,[2024-12-01 10:24:15.456] CRITICAL: Out of disk space on /data partition,17,1
-10,warn:|cache miss rate exceeded,1,[2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold,18,1
