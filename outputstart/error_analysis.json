@@ -1,0 +1,248 @@
+{
+  "summary": {
+    "total_clusters": 157,
+    "total_lines": 296,
+    "average_cluster_size": 1.8853503184713376,
+    "largest_cluster": 34,
+    "smallest_cluster": 1
+  },
+  "top_clusters": [
+    {
+      "signature": "unknown|<<path>>",
+      "count": 34,
+      "sample_lines": [
+        "    </style>",
+        "</head>",
+        "        </header>"
+      ],
+      "line_numbers": [
+        172,
+        173,
+        179,
+        184,
+        188,
+        192,
+        196,
+        197,
+        207,
+        208,
+        215,
+        221,
+        227,
+        233,
+        239,
+        245,
+        251,
+        257,
+        263,
+        264,
+        265,
+        266,
+        274,
+        275,
+        280,
+        281,
+        286,
+        287,
+        288,
+        289,
+        292,
+        293,
+        294,
+        295
+      ]
+    },
+    {
+      "signature": "unknown|",
+      "count": 32,
+      "sample_lines": [
+        "        * {",
+        "        }",
+        "        }"
+      ],
+      "line_numbers": [
+        7,
+        11,
+        17,
+        22,
+        30,
+        34,
+        38,
+        44,
+        51,
+        58,
+        63,
+        70,
+        76,
+        81,
+        82,
+        89,
+        90,
+        93,
+        96,
+        100,
+        107,
+        115,
+        125,
+        134,
+        137,
+        141,
+        147,
+        154,
+        161,
+        166,
+        171,
+        273
+      ]
+    },
+    {
+      "signature": "unknown|<div class=<str>>",
+      "count": 15,
+      "sample_lines": [
+        "    <div class=\"container\">",
+        "        <div class=\"summary-grid\">",
+        "            <div class=\"summary-card\">"
+      ],
+      "line_numbers": [
+        175,
+        180,
+        181,
+        185,
+        189,
+        193,
+        198,
+        267,
+        269,
+        270,
+        272,
+        276,
+        278,
+        282,
+        284
+      ]
+    },
+    {
+      "signature": "unknown|<tr>",
+      "count": 10,
+      "sample_lines": [
+        "                    <tr>",
+        "                    <tr>",
+        "                    <tr>"
+      ],
+      "line_numbers": [
+        202,
+        210,
+        216,
+        222,
+        228,
+        234,
+        240,
+        246,
+        252,
+        258
+      ]
+    },
+    {
+      "signature": "unknown|<td><span class=<str>>1<<path>><<path>>",
+      "count": 8,
+      "sample_lines": [
+        "                        <td><span class=\"occurrence\">1</span></td>",
+        "                        <td><span class=\"occurrence\">1</span></td>",
+        "                        <td><span class=\"occurrence\">1</span></td>"
+      ],
+      "line_numbers": [
+        219,
+        225,
+        231,
+        237,
+        243,
+        249,
+        255,
+        261
+      ]
+    },
+    {
+      "signature": "NullPointerException|<td class=<str> title=<str>>nullpointerexception|nullpointerexception",
+      "count": 5,
+      "sample_lines": [
+        "                        <td class=\"signature\" title=\"NullPointerException|nullpointerexception userservice.getuser() line\">NullPointerException|nullpointerexception userservice.getuser() line</td>",
+        "                        <td class=\"signature\" title=\"NullPointerException|nullpointerexception paymentservice.processpayment() line\">NullPointerException|nullpointerexception paymentservice.processpayment() line</td>",
+        "                        <td class=\"signature\" title=\"NullPointerException|nullpointerexception notificationservice.sendemail() line 156\">NullPointerException|nullpointerexception notificationservice.sendemail() line 1</td>"
+      ],
+      "line_numbers": [
+        218,
+        224,
+        230,
+        236,
+        242
+      ]
+    },
+    {
+      "signature": "unknown|color: #333;",
+      "count": 4,
+      "sample_lines": [
+        "            color: #333;",
+        "            color: #333;",
+        "            color: #333;"
+      ],
+      "line_numbers": [
+        15,
+        62,
+        140,
+        170
+      ]
+    },
+    {
+      "signature": "unknown|font-size: 0.9em;",
+      "count": 4,
+      "sample_lines": [
+        "            font-size: 0.9em;",
+        "            font-size: 0.9em;",
+        "            font-size: 0.9em;"
+      ],
+      "line_numbers": [
+        37,
+        54,
+        114,
+        146
+      ]
+    },
+    {
+      "signature": "unknown|color: #667eea;",
+      "count": 4,
+      "sample_lines": [
+        "            color: #667eea;",
+        "            color: #667eea;",
+        "            color: #667eea;"
+      ],
+      "line_numbers": [
+        53,
+        72,
+        87,
+        99
+      ]
+    },
+    {
+      "signature": "unknown|font-weight: bold;",
+      "count": 4,
+      "sample_lines": [
+        "            font-weight: bold;",
+        "            font-weight: bold;",
+        "            font-weight: bold;"
+      ],
+      "line_numbers": [
+        61,
+        98,
+        105,
+        169
+      ]
+    }
+  ],
+  "additional_stats": {
+    "total_lines": 296,
+    "with_timestamp": 10,
+    "avg_line_length": 37.57432432432432,
+    "min_line_length": 1,
+    "max_line_length": 222
+  }
+}

@@ -1,0 +1,11 @@
+rank,signature,occurrence_count,sample_line,first_10_line_numbers,total_line_count
+1,unknown|<<path>>,34,    </style>,"172,173,179,184,188,192,196,197,207,208",34
+2,unknown|,32,        * {,"7,11,17,22,30,34,38,44,51,58",32
+3,unknown|<div class=<str>>,15,"    <div class=""container"">","175,180,181,185,189,193,198,267,269,270",15
+4,unknown|<tr>,10,                    <tr>,"202,210,216,222,228,234,240,246,252,258",10
+5,unknown|<td><span class=<str>>1<<path>><<path>>,8,"                        <td><span class=""occurrence"">1</span></td>","219,225,231,237,243,249,255,261",8
+6,NullPointerException|<td class=<str> title=<str>>nullpointerexception|nullpointerexception,5,"                        <td class=""signature"" title=""NullPointerException|nullpointerexception userservice.getuser() line"">NullPointerException|nullpointerexception userservice.getuser() line</td>","218,224,230,236,242",5
+7,unknown|color: #333;,4,            color: #333;,"15,62,140,170",4
+8,unknown|font-size: 0.9em;,4,            font-size: 0.9em;,"37,54,114,146",4
+9,unknown|color: #667eea;,4,            color: #667eea;,"53,72,87,99",4
+10,unknown|font-weight: bold;,4,            font-weight: bold;,"61,98,105,169",4
