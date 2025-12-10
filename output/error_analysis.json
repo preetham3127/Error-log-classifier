@@ -1,8 +1,8 @@
 {
   "summary": {
-    "total_clusters": 26,
-    "total_lines": 35,
-    "average_cluster_size": 1.3461538461538463,
+    "total_clusters": 9,
+    "total_lines": 19,
+    "average_cluster_size": 2.0,
     "largest_cluster": 10,
     "smallest_cluster": 1
   },
@@ -27,7 +27,7 @@
         8,
         9
       ]
-          },
+    },
     {
       "signature": "NullPointerException|nullpointerexception userservice.getuser() line",
       "count": 1,
@@ -107,23 +107,13 @@
       "line_numbers": [
         17
       ]
-    },
-    {
-      "signature": "warn:|cache miss rate exceeded",
-      "count": 1,
-      "sample_lines": [
-        "[2024-12-01 10:25:15.890] WARN: Cache miss rate exceeded 40% threshold"
-      ],
-      "line_numbers": [
-        18
-      ]
     }
   ],
   "additional_stats": {
-    "total_lines": 35,
-    "with_timestamp": 35,
-    "avg_line_length": 84.34285714285714,
-    "min_line_length": 70,
+    "total_lines": 19,
+    "with_timestamp": 18,
+    "avg_line_length": 85.88888888888889,
+    "min_line_length": 72,
     "max_line_length": 100
   }
 }
